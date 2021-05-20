@@ -1,0 +1,325 @@
+/* 노말라이즈 */
+
+body,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    color: #969696;
+    ;
+    text-decoration: none;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* 라이브러리 */
+
+@font-face {
+    font-family: 'NEXON Lv2 Gothic';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv2 Gothic.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html {
+    font-family: 'NEXON Lv2 Gothic';
+}
+
+:root {
+    --site-width: 1280px;
+}
+
+.container {
+    max-width: var(--site-width);
+    margin: 0 auto;
+}
+
+@media(max-width: 1320px) {
+    .container {
+        padding: 0 20px;
+    }
+}
+
+#wrap {
+    width: 100%;
+}
+
+header {
+    width: 100%;
+}
+
+.section {
+    width: 100%;
+}
+
+.section {
+    min-height: 300px;
+}
+
+.section.section01 {
+    background-color: #d8d8c1;
+}
+
+.section.section02 {
+    background-color: #e9e9d8;
+}
+
+.section.section03 {
+    background-color: #c1c1a3;
+}
+
+.section.section04 {
+    background-color: #d8d8c1;
+}
+
+footer {
+    height: 100px;
+    background-color: #fa4f5f;
+}
+
+/* 커스텀 */
+
+.header {
+    position: fixed;
+    height: 85px;
+    background-color: #fff;
+    left: 0;
+    top: 0;
+    font-size: 17px;
+    z-index: 100;
+    box-shadow: 0px 0px 5px 0px gray;
+}
+
+.header .header-wrap {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+/* 로고 */
+
+.header .header-wrap .logo {
+    width: 93px;
+    padding-left: 30px;
+    margin: 0;
+    border: 1px solid green;
+}
+
+.header .header-wrap .logo > a {
+    border: 1px solid green;
+    display: block;
+    width: 100%;
+}
+
+.header .header-wrap .logo > a img {
+    width: 100%;
+    display: block;
+}
+
+/* 로고 끝 */
+
+/* 메뉴 */
+
+
+.menu {
+    width: calc(100% - 93px - 220px);
+    min-width: 630px;
+    padding-top: 24px;
+    text-align: center;
+    border: 1px solid red;
+}
+
+.menu ul {}
+
+.menu ul li {
+    width: 20%;
+    position: relative;
+    float: left;
+    text-align: center;
+}
+
+.menu ul li a {
+    padding: 10px;
+    display: block;
+    color: #4c4c4c;
+    font-size: 17px;
+    font-weight: bold;
+    padding-bottom: 32px;
+}
+
+.menu ul li a > img {
+    outline: none;
+    width: 0;
+    position: absolute;
+    bottom: 15px;
+    left: 0;
+    top: 35px;
+    height: 2px;
+    padding-left: 30%;
+}
+
+.menu ul li:hover > a {
+    color: #ec1d85;
+}
+
+.menu ul li:hover > a > img {
+    width: 70%;
+    outline: none;
+    transition: width .5s
+}
+
+/* 로그인 */
+
+.more-box {
+    width: 220px;
+    border: 1px solid pink;
+    padding-left: 15px;
+    box-sizing: border-box;
+    margin-top: 5px;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    position: relative;
+}
+
+.search-box {
+    background: url(http://www.ht.co.kr/rs/images/main/btn/gnb7_on.png) 0px 0px no-repeat;
+    padding: 3px 30px 3px 10px;
+    width: 151px;
+    height: 29px;
+    border: none;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    outline: none;
+}
+
+.more-box .language {
+    padding-left: 25px;
+    padding-top: 2px;
+}
+
+/* 메뉴 끝 */
+
+
+/* 서브메뉴 */
+
+.menu ul.submenu {
+    display: none;
+    position: absolute;
+    left: 0;
+    background-color: #FFF1EA;
+    height: 330px;
+}
+
+.menu ul.submenu li {
+    width: 100%;
+}
+
+.menu ul.submenu li:first-child {
+    padding-top: 20px;
+}
+
+.menu ul li:first-child ul.submenu::after {
+    content: "";
+    position: absolute;
+    left: -640px;
+    top: 0;
+    width: 640px;
+    height: 330px;
+    background-color: #FFF1EA;
+}
+
+.menu ul li:last-child ul.submenu::after {
+    content: "";
+    position: absolute;
+    right: -640px;
+    top: 0;
+    width: 640px;
+    height: 330px;
+    background-color: #FFF1EA;
+}
+
+.menu ul.submenu li a {
+    font-size: 14px;
+    padding-bottom: 10px;
+    font-weight: normal;
+}
+
+/* 서브메뉴 끝 */
+
+
+
+/* 로그인 끝 */
+
+/* 탑버튼 */
+
+.top-btn {
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+    width: 48px;
+    padding: 10px 0px;
+    background-color: #ec1d85;
+    border-radius: 15px;
+    text-align: center;
+    line-height: 1;
+    font-size: 28px;
+    color: #FFF1EA;
+    z-index: 999;
+}
+
+/* 탑버튼 끝 */
+
+
+
+
+
+/* 반응형 */
+@media(max-width: 1200px){
+    
+}
+@media(max-width: 1023px) {
+   .more-box {
+        display: none;
+    } 
+    .menu {
+        width: calc(100% - 93px);
+    }
+}
+
+@media (max-width: 740px) {
+    .menu{
+        display: none;
+    }
+    .logo {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 639px) {
+    
+}
+
+@media (max-width: 374px) {
+   
+}
+
+
+
+
+
+
+
+

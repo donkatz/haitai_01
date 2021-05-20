@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Responsive Auto-height - fullPage.js</title>
+    <meta name="author" content="Alvaro Trigo Lopez" />
+    <meta name="description" content="fullPage full-screen navigation and sections control menu." />
+    <meta name="keywords" content="fullpage,jquery,demo,screen,fullscreen,navigation,control arrows, dots" />
+    <meta name="Resource-type" content="Document" />
+
+
+    <link rel="stylesheet" type="text/css" href="css/fullpage.css">
+    <link rel="stylesheet" type="text/css" href="css/examples.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+</head>
+
+<body>
+
+    <div id="fullpage">
+        <header class="header">
+
+            <div class="header-wrap">
+
+
+                <!--               로고-->
+                <h1 class="logo">
+                    <a href="#">
+                        <img src="img/logo.png" alt="메인로고">
+                    </a>
+                </h1>
+
+
+                <!--                메뉴-->
+                <div class="menu">
+
+                    <ul>
+
+                        <li>
+                            <a href="#">
+                                <div>제품소개</div>
+                                <img src="img/gnb-border.png" alt="">
+                            </a>
+                            <ul class="submenu">
+                                <li><a href="#">해태제과 캐릭터</a></li>
+                                <li><a href="#">비스켓</a></li>
+                                <li><a href="#">스낵</a></li>
+                                <li><a href="#">껌</a></li>
+                                <li><a href="#">초코</a></li>
+                                <li><a href="#">캔디</a></li>
+                                <li><a href="#">식품</a></li>
+                                <li><a href="#">전체식품</a></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                <div>컨텐츠</div>
+                                <img src="img/gnb-border.png" alt="">
+                            </a>
+                            <ul class="submenu">
+                                <li><a href="#">CF</a></li>
+                                <li><a href="#">아이부라보</a></li>
+                                <li><a href="#">공지사항</a></li>
+                                <li><a href="#">해태뉴스</a></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                <div>이벤트</div>
+                                <img src="img/gnb-border.png" alt="">
+                            </a>
+                            <ul class="submenu">
+                                <li><a href="#">진행 중 이벤트</a></li>
+                                <li><a href="#">지난 이벤트</a></li>
+                                <li><a href="#">당첨자 발표</a></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                <div>고객센터</div>
+                                <img src="img/gnb-border.png" alt="">
+                            </a>
+                            <ul class="submenu">
+                                <li><a href="#">고객의 소리</a></li>
+                                <li><a href="#">아이디어 제안</a></li>
+                                <li><a href="#">Q&A</a></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                <div>회사소개</div>
+                                <img src="img/gnb-border.png" alt="" class="gnb-border">
+                            </a>
+                            <ul class="submenu">
+                                <li><a href="#">회장 인사말</a></li>
+                                <li><a href="#">해태 소개</a></li>
+                                <li><a href="#">윤리 경영</a></li>
+                                <li><a href="#">해태 네트워크</a></li>
+                                <li><a href="#">오시는 길</a></li>
+                                <li><a href="#">채용</a></li>
+                                <li><a href="#">IR정보</a></li>
+                            </ul>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+
+                <!--                로그인-->
+                <div class="more-box">
+
+                    <a href="#">
+
+                        <div class="textbox">
+
+                            <input type="text" name="search01" class="search-box" id="ex_input" placeholder="SEARCH">
+                        </div>
+
+                    </a>
+
+                    <a href="#" class="language">
+                        <img src="img/global.png" alt="">
+                    </a>
+
+
+                </div>
+
+            </div>
+        </header>
+        <div class="section fp-auto-height-responsive" id="section0">
+            <div>SECTION01</div>
+        </div>
+        <div class="section" id="section1">
+            <!--
+	    <div class="slide" id="slide1">
+			<div class="intro">
+				<h1>Ideal for small screens</h1>
+			</div>
+		</div>
+
+	    <div class="slide" id="slide2">
+			<h1>This example uses responsiveWidth: 900</h1>
+		</div>
+-->
+
+            <div>SECTION02</div>
+
+        </div>
+        <div class="section" id="section2">
+            <div class="intro">
+                <h1>Keep it simple!</h1>
+            </div>
+        </div>
+        <div class="section" id="section3">
+            <div class="intro">
+                <h1>Keep it simple!</h1>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="js/fullpage.js"></script>
+    <script type="text/javascript" src="js/examples.js"></script>
+
+    <script type="text/javascript">
+        var myFullpage = new fullpage('#fullpage', {
+            anchors: ['firstPage', 'secondPage', '3rdPage', '4thPage'],
+            sectionsColor: ['#C63D0F', '#1BBC9B', '#7E8F7C', '#ffffff'],
+            navigation: true,
+            navigationPosition: 'right',
+            //        navigationTooltips: ['First page', 'Second page', 'Third and last page', '4thPage'],
+            responsiveWidth: 900,
+            afterResponsive: function(isResponsive) {
+
+            }
+
+        });
+
+    </script>
+
+</body>
+
+</html>
