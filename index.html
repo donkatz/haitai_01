@@ -3,7 +3,9 @@
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Responsive Auto-height - fullPage.js</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>해태제과</title>
     <meta name="author" content="Alvaro Trigo Lopez" />
     <meta name="description" content="fullPage full-screen navigation and sections control menu." />
     <meta name="keywords" content="fullpage,jquery,demo,screen,fullscreen,navigation,control arrows, dots" />
@@ -13,6 +15,13 @@
     <link rel="stylesheet" type="text/css" href="css/fullpage.css">
     <link rel="stylesheet" type="text/css" href="css/examples.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="favicon" href="img/favicon.ico">
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/common.js"></script>
+    <script type="text/javascript" src="js/fullpage.js"></script>
+    <script type="text/javascript" src="js/examples.js"></script>
 
 </head>
 
@@ -164,24 +173,6 @@
         </div>
     </div>
 
-    <script type="text/javascript" src="js/fullpage.js"></script>
-    <script type="text/javascript" src="js/examples.js"></script>
-
-    <script type="text/javascript">
-        var myFullpage = new fullpage('#fullpage', {
-            anchors: ['firstPage', 'secondPage', '3rdPage', '4thPage'],
-            sectionsColor: ['#C63D0F', '#1BBC9B', '#7E8F7C', '#ffffff'],
-            navigation: true,
-            navigationPosition: 'right',
-            //        navigationTooltips: ['First page', 'Second page', 'Third and last page', '4thPage'],
-            responsiveWidth: 900,
-            afterResponsive: function(isResponsive) {
-
-            }
-
-        });
-
-    </script>
 
 </body>
 
